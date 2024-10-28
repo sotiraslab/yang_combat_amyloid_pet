@@ -1,0 +1,85 @@
+FreeSurfer ROI,ROI subgroup
+ctx.lh.bankssts,Other cortical ROI
+ctx.lh.caudalanteriorcingulate,Other cortical ROI
+ctx.lh.caudalmiddlefrontal,Other cortical ROI
+ctx.lh.cuneus,Other cortical ROI
+ctx.lh.entorhinal,Other cortical ROI
+ctx.lh.frontalpole,Other cortical ROI
+ctx.lh.fusiform,Other cortical ROI
+ctx.lh.inferiorparietal,Other cortical ROI
+ctx.lh.inferiortemporal,Other cortical ROI
+ctx.lh.insula,Other cortical ROI
+ctx.lh.isthmuscingulate,Other cortical ROI
+ctx.lh.lateraloccipital,Other cortical ROI
+ctx.lh.lingual,Other cortical ROI
+ctx.lh.paracentral,Other cortical ROI
+ctx.lh.parahippocampal,Other cortical ROI
+ctx.lh.parsopercularis,Other cortical ROI
+ctx.lh.parsorbitalis,Other cortical ROI
+ctx.lh.parstriangularis,Other cortical ROI
+ctx.lh.pericalcarine,Other cortical ROI
+ctx.lh.postcentral,Other cortical ROI
+ctx.lh.posteriorcingulate,Other cortical ROI
+ctx.lh.precentral,Other cortical ROI
+ctx.lh.rostralanteriorcingulate,Other cortical ROI
+ctx.lh.superiorparietal,Other cortical ROI
+ctx.lh.supramarginal,Other cortical ROI
+ctx.lh.temporalpole,Other cortical ROI
+ctx.lh.transversetemporal,Other cortical ROI
+ctx.rh.bankssts,Other cortical ROI
+ctx.rh.caudalanteriorcingulate,Other cortical ROI
+ctx.rh.caudalmiddlefrontal,Other cortical ROI
+ctx.rh.cuneus,Other cortical ROI
+ctx.rh.entorhinal,Other cortical ROI
+ctx.rh.frontalpole,Other cortical ROI
+ctx.rh.fusiform,Other cortical ROI
+ctx.rh.inferiorparietal,Other cortical ROI
+ctx.rh.inferiortemporal,Other cortical ROI
+ctx.rh.insula,Other cortical ROI
+ctx.rh.isthmuscingulate,Other cortical ROI
+ctx.rh.lateraloccipital,Other cortical ROI
+ctx.rh.lingual,Other cortical ROI
+ctx.rh.paracentral,Other cortical ROI
+ctx.rh.parahippocampal,Other cortical ROI
+ctx.rh.parsopercularis,Other cortical ROI
+ctx.rh.parsorbitalis,Other cortical ROI
+ctx.rh.parstriangularis,Other cortical ROI
+ctx.rh.pericalcarine,Other cortical ROI
+ctx.rh.postcentral,Other cortical ROI
+ctx.rh.posteriorcingulate,Other cortical ROI
+ctx.rh.precentral,Other cortical ROI
+ctx.rh.rostralanteriorcingulate,Other cortical ROI
+ctx.rh.superiorparietal,Other cortical ROI
+ctx.rh.supramarginal,Other cortical ROI
+ctx.rh.temporalpole,Other cortical ROI
+ctx.rh.transversetemporal,Other cortical ROI
+left.cerebellum.cortex,Reference ROI
+right.cerebellum.cortex,Reference ROI
+left.accumbens.area,Subcortical ROI
+left.amygdala,Subcortical ROI
+left.caudate,Subcortical ROI
+left.hippocampus,Subcortical ROI
+left.pallidum,Subcortical ROI
+left.putamen,Subcortical ROI
+left.thalamus,Subcortical ROI
+right.accumbens.area,Subcortical ROI
+right.amygdala,Subcortical ROI
+right.caudate,Subcortical ROI
+right.hippocampus,Subcortical ROI
+right.pallidum,Subcortical ROI
+right.putamen,Subcortical ROI
+right.thalamus,Subcortical ROI
+ctx.lh.lateralorbitofrontal,Summary cortical ROI
+ctx.lh.medialorbitofrontal,Summary cortical ROI
+ctx.lh.middletemporal,Summary cortical ROI
+ctx.lh.precuneus,Summary cortical ROI
+ctx.lh.rostralmiddlefrontal,Summary cortical ROI
+ctx.lh.superiorfrontal,Summary cortical ROI
+ctx.lh.superiortemporal,Summary cortical ROI
+ctx.rh.lateralorbitofrontal,Summary cortical ROI
+ctx.rh.medialorbitofrontal,Summary cortical ROI
+ctx.rh.middletemporal,Summary cortical ROI
+ctx.rh.precuneus,Summary cortical ROI
+ctx.rh.rostralmiddlefrontal,Summary cortical ROI
+ctx.rh.superiorfrontal,Summary cortical ROI
+ctx.rh.superiortemporal,Summary cortical ROI

@@ -1,0 +1,13 @@
+{
+    "OASIS_paths": {
+        "pet": "/path/to/OASIS3_data_files/scans/PUP-PUP_output/resources/csv/files/OASIS3_PUP.csv",
+        "cdr": "/path/to/OASIS3_data_files/scans/UDSb4-Form_B4__Global_Staging__CDR__Standard_and_Supplemental/resources/csv/files/OASIS3_UDSb4_cdr.csv",
+        "freesurfer": "/path/to/OASIS3_data_files/scans/FS-Freesurfer_output/resources/csv/files/OASIS3_Freesurfer_output.csv",
+        "demog": "/path/to/OASIS3_data_files/scans/demo-demographics/resources/csv/files/OASIS3_demographics.csv",
+        "mri_meta": "/path/to/OASIS3_data_files/scans/MRI-json-MRI_json_information/resources/csv/files/OASIS3_MR_json.csv",
+        "pet_meta": "/path/to/OASIS3_data_files/scans/PET-json-PET_json_information/resources/csv/files/OASIS3_PET_json.csv"
+    },
+    "simulation_params": {
+        "n_simulation": 10
+    }
+}

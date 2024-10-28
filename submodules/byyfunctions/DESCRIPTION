@@ -1,0 +1,23 @@
+Package: byyfunctions
+Type: Package
+Title: Helper functions for AD Longitudinal Prediction
+Version: 0.0.1
+Date: 2023-03-02
+Authors@R: person("Braden", "Yang", email = "bradenyang@gmail.com", role = c("aut", "cre"))
+Description: Short helper functions written by me to facilitate quick data analysis and improve project productivity
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.2.3
+Encoding: UTF-8
+LazyData: TRUE
+Imports:
+    dplyr,
+    tidyr,
+    purrr,
+    stringr,
+    tibble,
+    ggplot2
+Suggests: 
+    testthat (>= 3.0.0),
+    ggseg,
+    patchwork
+Config/testthat/edition: 3
