@@ -51,7 +51,7 @@ option_list <- list(
 opt <- parse_args(OptionParser(option_list = option_list))
 
 if (INTERACTIVE) {
-    opt$plot_peace <- TRUE
+    opt$plot_peace <- FALSE
 }
 
 # set working directory
@@ -324,7 +324,8 @@ plot_icc_scatter <- function(.data, h) {
             theme(
                 legend.position = "none",
                 axis.title = element_blank(),
-                plot.title = element_text(hjust = 0.5, size = 15)
+                plot.title = element_text(hjust = 0.5, size = 18),
+                axis.text = element_text(size = 12)
             ) +
             coord_fixed(ratio = 1, xlim = c(min_lim, max_lim), ylim = c(min_lim, max_lim)) +
             labs(title = .$harmonization_method %>% unique %>% str_wrap(20))}
@@ -341,8 +342,8 @@ if (opt$plot_peace) {
 } else {
     x_label_idx <- 3
 }
-summary_icc_scatter_list[[1]] <- summary_icc_scatter_list[[1]] + labs(y = "PiB measurement") + theme(axis.title.y = element_text(size = 12))
-summary_icc_scatter_list[[x_label_idx]] <- summary_icc_scatter_list[[x_label_idx]] + labs(x = "FBP measurement") + theme(axis.title.x = element_text(size = 12))
+summary_icc_scatter_list[[1]] <- summary_icc_scatter_list[[1]] + labs(y = "PiB measurement") + theme(axis.title.y = element_text(size = 20))
+summary_icc_scatter_list[[x_label_idx]] <- summary_icc_scatter_list[[x_label_idx]] + labs(x = "FBP measurement") + theme(axis.title.x = element_text(size = 20))
 summary_icc_scatter <- wrap_plots(summary_icc_scatter_list, nrow = 1)
 
 # absolute difference of summary region across scans
@@ -396,7 +397,12 @@ abs_diff_summary_boxplot_horiz <- plot_df %>%
         geom_point(fill = NA, position = position_jitterdodge(jitter.width = 1.5), shape = 1, size = 0.75) +
         labs(x = "harmonization method", y = "absolute error") +
         theme_classic() +
-        theme(axis.text.x = element_text(hjust = 0.5, vjust = 1), legend.position = "none") +
+        theme(
+            axis.text.x = element_text(hjust = 0.5, vjust = 1, size = 12),
+            axis.text.y = element_text(size = 12),
+            axis.title = element_text(size = 16),
+            legend.position = "none"
+        ) +
         stat_pvalue_manual(
             pval_df,
             label = "p.adj.signif",
@@ -413,14 +419,14 @@ if (SAVE_FIG && !opt$plot_peace) {
     ggsave(
         file.path(icc_odir, "scatter_summary.png"),
         summary_icc_scatter,
-        width = 18, height = 4, units = "in",
-        dpi = 300
+        width = 16, height = 4, units = "in",
+        dpi = 500
     )
     ggsave(
         file.path(mae_odir, "summary_boxplot_horiz.png"),
         abs_diff_summary_boxplot_horiz,
         width = 10, height = 4, units = "in",
-        dpi = 300
+        dpi = 500
     )
 }
 
@@ -430,13 +436,13 @@ if (SAVE_FIG && opt$plot_peace) {
         file.path(peace_odir, "scatter_summary_PEACE.png"),
         summary_icc_scatter,
         width = 21, height = 4, units = "in",
-        dpi = 300
+        dpi = 500
     )
     ggsave(
         file.path(peace_odir, "summary_boxplot_horiz_PEACE.png"),
         abs_diff_summary_boxplot_horiz,
         width = 15, height = 6, units = "in",
-        dpi = 300
+        dpi = 500
     )
 }
 
@@ -495,12 +501,15 @@ icc_grouped_boxplot_horiz <- icc_long_all %>%
         labs(x = "ROI subgroup", y = "intraclass correlation coefficient (ICC)") +
         theme_classic() + 
         theme(
-            axis.text.x = element_text(hjust = 0.5, vjust = 1),
-            legend.position.inside = c(0.85, 0.85),
+            axis.text.x = element_text(hjust = 0.5, vjust = 1, size = 12),
+            # legend.position.inside = c(0.85, 0.85),
             panel.spacing.y = unit(0.25, "in"),
             panel.spacing.x = unit(0.4, "in"),
             strip.background = element_blank(),
-            strip.text = element_text(size = 14, face = "bold", family = "Arial")
+            strip.text = element_text(size = 14, face = "bold", family = "Arial"),
+            axis.text.y = element_text(size = 12),
+            axis.title.x = element_text(size = 14),
+            axis.title.y = element_blank()
         ) + 
         stat_pvalue_manual(
             icc_ttest_horiz,
@@ -517,8 +526,8 @@ if (SAVE_FIG && !opt$plot_peace) {
     ggsave(
         file.path(icc_odir, "boxplot_horiz.png"),
         icc_grouped_boxplot_horiz,
-        width = 12, height = 5, units = "in",
-        dpi = 300
+        width = 14, height = 5, units = "in",
+        dpi = 500
     )
 }
 if (SAVE_FIG && opt$plot_peace) {
@@ -526,7 +535,7 @@ if (SAVE_FIG && opt$plot_peace) {
         file.path(peace_odir, "icc_boxplot_horiz_PEACE.png"),
         icc_grouped_boxplot_horiz,
         width = 18, height = 6, units = "in",
-        dpi = 300
+        dpi = 500
     )
 }
 
@@ -676,12 +685,16 @@ mae_grouped_boxplot_horiz <- plot_df %>%
         labs(x = "ROI subgroup", y = "mean absolute error (MAE)") +
         theme_classic() + 
         theme(
-            axis.text.x = element_text(hjust = 0.5, vjust = 1),
-            legend.position.inside = c(0.85, 0.85),
+            axis.text.x = element_text(hjust = 0.5, vjust = 1, size = 12),
+            # legend.position.inside = c(0.85, 0.85),
             panel.spacing.y = unit(0.25, "in"),
             panel.spacing.x = unit(0.4, "in"),
             strip.background = element_blank(),
-            strip.text = element_text(size = 14, face = "bold", family = "Arial")
+            strip.text = element_text(size = 14, face = "bold", family = "Arial"),
+            axis.text.y = element_text(size = 12),
+            axis.title.x = element_text(size = 14),
+            axis.title.y = element_blank(),
+            plot.margin = margin(r = 10, unit = "pt")
         ) + 
         stat_pvalue_manual(
             pval_df,
@@ -696,8 +709,8 @@ if (SAVE_FIG && !opt$plot_peace) {
     ggsave(
         file.path(mae_odir, "boxplot_horiz.png"),
         mae_grouped_boxplot_horiz,
-        width = 12, height = 5, units = "in",
-        dpi = 300
+        width = 14, height = 5, units = "in",
+        dpi = 500
     )
 }
 if (SAVE_FIG && opt$plot_peace) {
@@ -705,7 +718,7 @@ if (SAVE_FIG && opt$plot_peace) {
         file.path(peace_odir, "mae_roi_boxplot_horiz_PEACE.png"),
         mae_grouped_boxplot_horiz,
         width = 18, height = 6, units = "in",
-        dpi = 300
+        dpi = 500
     )
 }
 
