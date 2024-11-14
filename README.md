@@ -1,5 +1,7 @@
 <!--- This markdown file was designed to roughly follow the Penn LINC Neuroinformatics template: https://pennlinc.github.io/docs/Contributing/ProjectTemplate/ --->
 
+![image](https://github.com/user-attachments/assets/be1f6103-bd0f-41c6-8ada-bb67a6892b0f)
+
 # Evaluation of ComBat harmonization for reducing across-tracer differences in regional amyloid PET analyses
 
 ![Graphical abstract](figures/for_manuscript/graphical_abstract.png)
