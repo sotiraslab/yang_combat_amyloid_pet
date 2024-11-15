@@ -2,7 +2,7 @@
 
 ![image](https://github.com/user-attachments/assets/be1f6103-bd0f-41c6-8ada-bb67a6892b0f)
 
-# Evaluation of ComBat harmonization for reducing across-tracer differences in regional amyloid PET analyses
+# Evaluation of ComBat Harmonization for Reducing Across-Tracer Differences in Regional Amyloid PET Analyses
 
 ![Graphical abstract](figures/for_manuscript/graphical_abstract.png)
 
@@ -12,7 +12,7 @@
 
 ## Project Description
 
-This repository contains accompanying code for the manuscript "Evaluation of ComBat harmonization for reducing across-tracer differences in regional amyloid PET analyses".
+This repository contains accompanying code for the manuscript [Evaluation of ComBat Harmonization for Reducing Across-Tracer Differences in Regional Amyloid PET Analyses](https://doi.org/10.1002/hbm.70068).
 
 ## Corresponding Author
 
@@ -97,4 +97,21 @@ This will run steps `0_GetData`, `1_Harmonize` and `2_HeadToHead` to completion 
 
 # Cite
 
-Accepted to *Human Brain Mapping*; citation coming soon.
+> Yang, B., Earnest, T., Kumar, S., Kothapalli, D., Benzinger, T., Gordon, B. and Sotiras, A. (2024), Evaluation of ComBat Harmonization for Reducing Across-Tracer Differences in Regional Amyloid PET Analyses. Hum Brain Mapp, 45: e70068. https://doi.org/10.1002/hbm.70068
+
+```
+@article{yang_evaluation_2024,
+    author = {Yang, Braden and Earnest, Tom and Kumar, Sayantan and Kothapalli, Deydeep and Benzinger, Tammie and Gordon, Brian and Sotiras, Aristeidis},
+    title = {Evaluation of ComBat Harmonization for Reducing Across-Tracer Differences in Regional Amyloid PET Analyses},
+    journal = {Human Brain Mapping},
+    volume = {45},
+    number = {16},
+    pages = {e70068},
+    keywords = {amyloid-β, Centiloid, ComBat, harmonization, positron emission tomography},
+    doi = {https://doi.org/10.1002/hbm.70068},
+    url = {https://onlinelibrary.wiley.com/doi/abs/10.1002/hbm.70068},
+    eprint = {https://onlinelibrary.wiley.com/doi/pdf/10.1002/hbm.70068},
+    note = {e70068 HBM-24-0637.R1},
+    year = {2024}
+}
+```
